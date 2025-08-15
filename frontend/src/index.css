@@ -1,0 +1,76 @@
+.app-container{
+  display: flex;
+  height: 100vh;/*set height to full viewport*/
+}
+.sidebar{
+  width: 250px;
+  background-color: lightblue;
+   padding: 20px;
+}
+.sidebar nav ul{
+  list-style-type: none;
+  padding:0;
+  
+}
+.sidebar nav ul li a{
+  display: block;
+  padding:10px;
+  text-decoration: aqua;
+  color: darkblue;
+  font-size: 20px;
+  border-radius:  5px;
+  margin-bottom: 5px;
+}
+.sidebar ul li a:hover {
+  font-size: 18px;         /* increase font size on hover */
+  font-weight: bold;       /* make it bold */
+  color: darkblue;         /* optional color change */
+}
+.main-content{
+  flex-grow: 1;
+  padding: 30px;
+}
+/* Add this to your existing CSS in index.css */
+.main-content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds space between form elements */
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.upload-form input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-form button {
+  padding: 12px;
+  background-color: #007bff; /* A nice blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
